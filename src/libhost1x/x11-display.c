@@ -181,8 +181,13 @@ int x11_display_create(struct host1x *host1x, struct host1x_display *base,
 	return 0;
 }
 #else
-int x11_display_create(struct host1x *host1x, struct host1x_display *base)
+int x11_display_create(struct host1x *host1x, struct host1x_display *base,
+		       int drm_fd)
 {
 	return -1;
 }
+// int x11_display_create(struct host1x *host1x, struct host1x_display *base)
+// {
+// 	return -1;
+// }
 #endif

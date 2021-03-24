@@ -1,5 +1,7 @@
+#LTLIBRARIES表示生成libtool库libgrate.la,lib表示安装到系统中
 lib_LTLIBRARIES = libgrate.la
 
+#表示生成libtool库libgrate.la时用到的预处理参数
 libgrate_la_CPPFLAGS = \
 	-I$(top_srcdir)/include
 

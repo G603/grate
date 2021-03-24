@@ -1,3 +1,4 @@
+#PROGRAMS表示生成可执行文件，noinst表示可执行文件在安装时不被安装到系统中，assembler就是可执行文件的名称
 noinst_PROGRAMS = \
 	assembler \
 	cgc \
@@ -7,10 +8,12 @@ noinst_PROGRAMS = \
 	replay \
 	reset3d
 
+
+#表示生成可执行程序assembler时用到的预处理参数，assembler是noinst_PROGRAMS指定的
 assembler_CPPFLAGS = \
 	-I$(top_srcdir)/include \
 	-I$(top_srcdir)/src/libgrate
-
+#表示链接assembler时所需要的库文件
 assembler_LDADD = \
 	../src/libgrate/libgrate.la
 

@@ -17,7 +17,7 @@ AM_PROG_LEX
 AC_PROG_YACC
 PKG_PROG_PKG_CONFIG
 
-#PKG_CHECK_MODULES(DevIL, ILU) #检测系统中pkgconfig是否存在ILU.pc文件，DevIL是DevIL_CLFAGS和DevIL_LIBS的前缀，DevIL_CLFAGS对应ILU.pc中的Cflags变量，DevIL_LIBS应ILU.pc中的Libs变量，DevIL_CLFAGS和DevIL_LIBS可以在Makefile.am中使用
+PKG_CHECK_MODULES(DevIL, ILU) #检测系统中pkgconfig是否存在ILU.pc文件，DevIL是DevIL_CLFAGS和DevIL_LIBS的前缀，DevIL_CLFAGS对应ILU.pc中的Cflags变量，DevIL_LIBS应ILU.pc中的Libs变量，DevIL_CLFAGS和DevIL_LIBS可以在Makefile.am中使用
 PKG_CHECK_MODULES(PNG, libpng) #检测系统中pkgconfig是否存在libpng.pc文件
 PKG_CHECK_MODULES(DRM, libdrm) #检测系统中pkgconfig是否存在libdrm.pc文件
 
